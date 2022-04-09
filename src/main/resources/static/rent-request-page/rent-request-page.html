@@ -1,0 +1,24 @@
+<div>
+    <h3>Информация об инструменте</h3>
+    <h5>Пока тут нормально не отображается ничего, т.к. нет данных из базы</h5>
+    <p>{{'Название инструмента: ' + tool.title}}</p>
+    <p>{{'Марка (производитель): ' + tool.mark}}</p>
+    <p>{{'Фото: ' + tool.photo}}</p>
+    <p>{{'Владелец/арендодатель: ' + tool.owner}}</p>
+    <p>{{'Цена аренды в сутки: ' + tool.price}}</p>
+    <p>{{'Сумма залога: ' + tool.deposit}}</p>
+    <p>{{'Календарь аренды'}}</p>
+    <p>{{'ЗДЕСЬ ПОДГРУЖАЕТСЯ КАЛЕНДАРЬ' + tool.ЗДЕСЬ НАДО БУДЕТ ВЫТАЩИТЬ ДАТЫ ИЗ СПИСКА Rent В ИНСТРУМЕНТЕ}}</p>
+
+    <p>Комментарий: в идеале как-то связать календарь с форомой аренды, чтобы из календаря выбирать свободные даты и они попадали в форму ниже</p>
+    <p></p>
+    <h3>Арендовать инструмент</h3>
+    <p></p>
+    <form novalidate ng-submit="rentTool()">
+        <input class="form-control" type="text" placeholder="Дата начала аренды" ng-model="rent.dateOfRentStart">
+        <p></p>
+        <input class="form-control" type="text" placeholder="Дата окончания аренды" ng-model="rent.dateOfRentFinish">
+        <p></p>
+        <button type="submit" class="btn btn-primary">Арендовать</button>
+    </form>
+</div>
