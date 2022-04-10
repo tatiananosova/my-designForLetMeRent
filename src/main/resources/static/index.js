@@ -30,6 +30,10 @@
                 templateUrl: 'authorisation/authorisation.html',
                 controller: 'authorisationController'
             })
+            .when('/registration', {
+                templateUrl: 'registration/registration.html',
+                controller: 'registrationController'
+            })
             .when('/add-tool-form', {
                 templateUrl: 'add-tool-form/add-tool-form.html',
                 controller: 'addToolFormController'
